@@ -9,3 +9,7 @@
 node_modules/
 node_modules/
 tailwindcss-linux-x64
+tailwindcss-linux-x64
+tailwind-built.css
+public/tailwind-built.css
+public/tailwind.css
