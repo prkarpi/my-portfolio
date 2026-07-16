@@ -1,6 +1,10 @@
 {
   "name": "my-portfolio",
   "scripts": {
-    "build": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && export PATH=\"$HOME/.cargo/bin:$PATH\" && rustup target add wasm32-unknown-unknown && cargo install dioxus-cli && dx build --release"
+    "build": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && export PATH=\"$HOME/.cargo/bin:$PATH\" && rustup target add wasm32-unknown-unknown && cargo install dioxus-cli && dx build --release",
+    "build:css": "tailwindcss -i ./public/style.css -o ./public/tailwind-built.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
   }
 }

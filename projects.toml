@@ -1,0 +1,15 @@
+[[projects]]
+title = "Arrowscapes"
+description = "A high-performance game developed using the Godot engine with native Rust bindings for fast, compiled core mechanics and server-side level validation."
+tech_stack = ["Rust", "Godot", "WebAssembly"]
+link = "https://github.com/avassiliev/arrowscapes"
+
+[[projects]]
+title = "Lottery Analytics Backend & Trend API"
+description = "A secured full-stack data ingestion pipeline built with Node.js and PostgreSQL, containerized with Docker, and optimized for rapid statistical sorting."
+tech_stack = ["Node.js", "PostgreSQL", "Docker", "Linux"]
+
+[[projects]]
+title = "High-Performance Web Scraper Bot"
+description = "An asynchronous concurrent web scraping tool optimized in Rust for scraping complex datasets with robust proxy rotation and memory safety."
+tech_stack = ["Rust", "Tokio", "Reqwest"]

@@ -1,0 +1,14 @@
+[application]
+name = "my-portfolio"
+default_platform = "web"
+
+[web.assets]
+assets_dir = "public"
+style = ["tailwind-built.css"]
+
+[web.html]
+template = "index.html"
+
+# Add this line right here to kill the automatic GitHub download loop:
+[web.compilation]
+wasm_opt = false

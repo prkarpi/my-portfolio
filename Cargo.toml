@@ -4,4 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-dioxus = { version = "0.5", features = ["web"] }
+dioxus = { version = "0.7.3", features = ["web", "router"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+
+[application]
+name = "my-portfolio"
+default_platform = "web"
+
+[web.assets]
+style = "style.css"

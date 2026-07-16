@@ -1,0 +1,31 @@
+/* assets/style.css */
+
+/* Core Layout Overrides (Global) */
+.text-xs { font-size: 1.05rem !important; } 
+.text-sm { font-size: 1.2rem !important; }  
+.text-lg { font-size: 1.4rem !important; }  
+.text-neutral-600.text-lg { font-size: 1.45rem !important; }
+.text-neutral-600.text-base { font-size: 1.35rem !important; }
+
+/* Butter-smooth Card Animations */
+.job-card-transition {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    will-change: transform, opacity, background-color;
+}
+
+/* Enhanced kinetic slide-up animation for the text content */
+.fade-in-content {
+    animation: cardFadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Staggered entry layer for the description items */
+.stagger-item {
+    opacity: 0;
+    animation: cardFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.12s;
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0.3; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
